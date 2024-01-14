@@ -18,3 +18,4 @@ class Comment(models.Model):
     description = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(get_user_model(), null=False, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, null=False, on_delete=models.CASCADE)

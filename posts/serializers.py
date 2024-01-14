@@ -10,7 +10,7 @@ class PostSerializer(serializers.ModelSerializer):
             "media",
             "description",
             "timestamp",
-            "author_id"
+            "author"
         ]
 
 class TagSerializer(serializers.ModelSerializer):
@@ -29,5 +29,6 @@ class CommentSerializer(serializers.ModelSerializer):
             "id",
             "description",
             "timestamp",
-            "author_id"
+            "author",
+            "post"
         ]
